@@ -149,7 +149,7 @@ void loop()
           // Send SMS with current location
           SIM.println("AT+CMGF=1"); // Configuring TEXT mode
           updateSerial();
-          SIM.println("AT+CMGS=\"+48695510160\""); // Change ZZ with country code   and xxxxxxxxxxx with phone number to send SMS
+          SIM.println("AT+CMGS=\"+ZZxxxxxxxxx\""); // Change ZZ with country code   and xxxxxxxxxxx with phone number to send SMS
           updateSerial();
           String msg = Serial1.readStringUntil('\r');
           SIM.println(msg);
