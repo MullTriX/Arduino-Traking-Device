@@ -18,7 +18,7 @@ float Threshold = 0.05; // Minimum acceleration required to start counting dista
 float distance = 0.0;
 
 unsigned long previousTime = 0;
-const unsigned long MIN_UPDATE_INTERVAL = 6 * 60 * 1000; // Minimum interval between updates (6 hours)
+const unsigned long MIN_UPDATE_INTERVAL = 6 * 60 * 60 * 1000; // Minimum interval between updates (6 hours)
 
 void updateSerial()
 {
